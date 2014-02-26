@@ -740,7 +740,7 @@ ServeInvoke(STREAMING_SERVER *server, RTMP * r, RTMPPacket *packet, unsigned int
 	      server->filetime = now;
 	      free(server->filename.av_val);
 	      server->filename = argv[argc++];
-	      spawn_dumper(argc, argv, cmd);
+	      // spawn_dumper(argc, argv, cmd);
 	    }
 
 	  free(cmd);
